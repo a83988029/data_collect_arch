@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-08T06:27:38.183Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="5akkMdWuUyA8nkiMDn4P" version="13.6.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-10-09T03:36:59.411Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="h0jsUbXWp3fpJAU_AWZD" version="13.6.9" type="github" pages="2">
   <diagram id="KirILR5CDpuxUOUy9zPu" name="架构图">
     <mxGraphModel dx="2201" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -103,11 +103,30 @@
         <mxCell id="d3snqNaNYPIwfVmhDXS2-8" value="api" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="bpy6qgxuukQEslOOV7Y_-1">
           <mxGeometry x="80" y="100" width="100" height="500" as="geometry" />
         </mxCell>
+        <mxCell id="d3snqNaNYPIwfVmhDXS2-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="d3snqNaNYPIwfVmhDXS2-8">
+          <mxGeometry x="50.5" y="60" width="10" height="80" as="geometry" />
+        </mxCell>
         <mxCell id="d3snqNaNYPIwfVmhDXS2-9" value="h5" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="bpy6qgxuukQEslOOV7Y_-1">
           <mxGeometry x="360" y="100" width="100" height="500" as="geometry" />
         </mxCell>
+        <mxCell id="d3snqNaNYPIwfVmhDXS2-21" value="clientid" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="d3snqNaNYPIwfVmhDXS2-9" target="d3snqNaNYPIwfVmhDXS2-10">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="50" y="60" as="sourcePoint" />
+            <mxPoint x="110" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="d3snqNaNYPIwfVmhDXS2-10" value="mqtt" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="bpy6qgxuukQEslOOV7Y_-1">
           <mxGeometry x="640" y="100" width="100" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="d3snqNaNYPIwfVmhDXS2-16" value="getloginqrcode/clientid" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="d3snqNaNYPIwfVmhDXS2-15" parent="bpy6qgxuukQEslOOV7Y_-1" source="d3snqNaNYPIwfVmhDXS2-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="160.0000000000001" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d3snqNaNYPIwfVmhDXS2-17" value="return qrcode" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="d3snqNaNYPIwfVmhDXS2-15" parent="bpy6qgxuukQEslOOV7Y_-1" target="d3snqNaNYPIwfVmhDXS2-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="236" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
