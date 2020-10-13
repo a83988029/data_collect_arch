@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-09T03:36:59.411Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="h0jsUbXWp3fpJAU_AWZD" version="13.6.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-10-13T15:31:49.232Z" agent="5.0 (Macintosh)" etag="OwgEZ3y7l6yFGiG00k7Y" version="13.7.9" type="github" pages="2">
   <diagram id="KirILR5CDpuxUOUy9zPu" name="架构图">
-    <mxGraphModel dx="2201" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1729" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,8 +19,14 @@
             <mxPoint x="89" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Xe7k-PLrE8OLdCzjjKIV-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=70;exitDy=80;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ZHXXnFqaBJZr9z3sk1o8-2" target="ZHXXnFqaBJZr9z3sk1o8-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="Xe7k-PLrE8OLdCzjjKIV-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=70;exitDy=80;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="ZHXXnFqaBJZr9z3sk1o8-2" target="ZHXXnFqaBJZr9z3sk1o8-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-110" y="720" />
+              <mxPoint x="230" y="720" />
+              <mxPoint x="230" y="605" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="Xe7k-PLrE8OLdCzjjKIV-10" value="接收开关指令、上传数据指令&lt;br&gt;上报开关状态指令、上传当前数据条数指令" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Xe7k-PLrE8OLdCzjjKIV-9" vertex="1" connectable="0">
           <mxGeometry x="-0.1821" y="3" relative="1" as="geometry">
@@ -82,6 +88,16 @@
         <mxCell id="Xe7k-PLrE8OLdCzjjKIV-5" value="上报上传进度、开关状态、数据量" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Xe7k-PLrE8OLdCzjjKIV-4" vertex="1" connectable="0">
           <mxGeometry x="-0.0857" y="38" relative="1" as="geometry">
             <mxPoint x="0.5" y="-39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5pPw4RpyUW3EL2WRtC4s-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.75;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZHXXnFqaBJZr9z3sk1o8-4" target="ZHXXnFqaBJZr9z3sk1o8-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-90" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5pPw4RpyUW3EL2WRtC4s-2" value="上报心跳，当前设备号" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5pPw4RpyUW3EL2WRtC4s-1">
+          <mxGeometry x="-0.2401" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ZHXXnFqaBJZr9z3sk1o8-4" value="数据采集" style="shape=hexagon;whiteSpace=wrap;html=1;perimeter=hexagonPerimeter;rounded=0;dropTarget=0;" parent="1" vertex="1">
